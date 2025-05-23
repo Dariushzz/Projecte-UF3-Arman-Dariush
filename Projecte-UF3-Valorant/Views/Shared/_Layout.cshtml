@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VALORANT - ALI / DARIUSH</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Projecte_UF3_Arman_Dariush.styles.css" asp-append-version="true" />
+
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home"
+                    asp-action="Index">VALORANT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                                asp-action="Index">AGENTES</a>
+                        </li>
+                        @* <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home"
+                                asp-action="Privacy">ROLES</a>
+                        </li> *@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Mapas">MAPAS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - Projecte_UF3_Arman_Dariush - <a asp-area="" asp-controller="Home"
+                asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
+<style>
+    body {
+        font-size: 1.1rem;
+        /* Aumenta tamaño global de fuente */
+    }
+
+    .navbar {
+        background-color: #1c1c2b !important;
+        border-bottom: 4px solid #ff416c;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+        color: #ff416c !important;
+        font-size: 2rem;
+        /* Aumentado */
+        text-shadow: 1px 1px 2px #000;
+    }
+
+    .nav-link {
+        color: #ffffff !important;
+        font-weight: 600;
+        font-size: 1.1rem;
+        /* Aumentado */
+        transition: color 0.3s ease;
+        padding: 0.6rem 1rem;
+    }
+
+    .nav-link:hover {
+        color: #ff416c !important;
+    }
+
+    footer.footer {
+        background-color: #1c1c2b;
+        color: #bbb;
+        padding: 1.5rem 0;
+        /* Aumentado */
+        margin-top: 2rem;
+        font-size: 1rem;
+        /* Aumentado */
+        text-align: center;
+    }
+
+    footer a {
+        color: #ff416c;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    .navbar-toggler {
+        border-color: #ff416c;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 65, 108, 0.7)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+</style>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Projecte-UF3-Arman-Dariush.props" />
+</Project>

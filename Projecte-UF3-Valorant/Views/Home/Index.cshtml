@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Root
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #1c1c2b;
+        color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text-center {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .text-center h1 {
+        font-family: Impact, Charcoal, sans-serif;
+        font-size: 4rem;
+        color: #ff416c;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        letter-spacing: 2px;
+    }
+
+    .tarjeta {
+        display: inline-block;
+        margin: 15px;
+        background-color: #2a2a2a;
+        border: 1px solid #444;
+        border-radius: 10px;
+        padding: 20px;
+
+        width: 600px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        transition: transform 0.2s;
+        text-align: center;
+    }
+
+    .tarjeta:hover {
+        transform: scale(1.02);
+    }
+
+    .tarjeta img {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+    h1,
+    h4 {
+        color: #ff416c;
+    }
+
+    p {
+        color: #ff416c;
+    }
+</style>
+</text>
+
+<div class="text-center">
+    <h1 class="display-4">VALORANT</h1>
+    <p>Datos esenciales de los agentes de VALORANT, extraídos directamente desde la API oficial.</p>
+</div>
+
+@foreach (var item in @Model.data)
+{
+    <div class="tarjeta">
+    <h1>@item.displayName</h1>
+    <img src="@item.displayIcon"></img>
+    <h4>Rol: @item.role.displayName</h4>
+    <p>@item.description</p>
+    </div>
+}
