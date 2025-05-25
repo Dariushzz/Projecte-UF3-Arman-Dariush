@@ -30,6 +30,7 @@ Es una propiedad que realmente si está en la API pero no está bien establecida
 ### Nacionalidad del Agente: 
 Una propiedad donde únicamente indique el país del agente. Consideramos un error que no este ya que en la mayoría de descripciones de los agentes menciona de qué país proceden,
 por ejemplo el personaje “Chamber” y “Skye” :
+![Image Alt](https://github.com/Dariushzz/Projecte-UF3-Arman-Dariush/blob/1afc8cfd9843b77d951275a5bc4cb627cd3a11c0/Captura1.jpg)
 
 ### Eventos al hacer click a los Agentes:
 Una funcionalidad útil para añadir a la web sería mostrar las habilidades de cada agente al hacer click sobre el.
