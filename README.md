@@ -9,8 +9,6 @@ El proyecto nos ha parecido bastante interesante, sobre todo porque hemos tenido
 el foreach para  iterar, con la finalidad de hacer la web. 
 
 ## Esquema arquitectura
-![Image Alt](https://github.com/Dariushzz/Projecte-UF3-Arman-Dariush/blob/main/esquema%20arquitectura.png)
-
 <img src="https://github.com/Dariushzz/Projecte-UF3-Arman-Dariush/blob/main/esquema%20arquitectura.png" width="400"/>
 
 ## Explicación del código 
