@@ -11,6 +11,8 @@ el foreach para  iterar, con la finalidad de hacer la web.
 ## Esquema arquitectura
 ![Image Alt](https://github.com/Dariushzz/Projecte-UF3-Arman-Dariush/blob/main/esquema%20arquitectura.png)
 
+<img src="[ruta/de/la/imagen.png](https://github.com/Dariushzz/Projecte-UF3-Arman-Dariush/blob/main/esquema%20arquitectura.png)" width="400"/>
+
 ## Explicación del código 
 La aplicación sigue el patrón MVC (Modelo-Vista-Controlador).
 
