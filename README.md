@@ -9,7 +9,7 @@ El proyecto nos ha parecido bastante interesante, sobre todo porque hemos tenido
 el foreach para  iterar, con la finalidad de hacer la web. 
 
 ## Esquema arquitectura
-![Image Alt](link)
+![Image Alt](https://github.com/Dariushzz/Projecte-UF3-Arman-Dariush/blob/main/esquema%20arquitectura.png)
 
 ## Explicación del código 
 La aplicación sigue el patrón MVC (Modelo-Vista-Controlador).
